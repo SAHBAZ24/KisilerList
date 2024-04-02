@@ -1,0 +1,33 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+
+    <Dialog id="_IDGenDialog1">
+        <customHeader>
+            <Bar id="_IDGenBar1">
+                <contentMiddle>
+                    <Label id="_IDGenLabel1" text="Kişi Ekle"/>
+                </contentMiddle>
+                <contentRight>
+                    <Button id="_IDGenButton1" icon="sap-icon://decline" press="onCloseDialog2"/>
+                </contentRight>
+            </Bar>
+        </customHeader>
+        <VBox id="_IDGenVBox1">
+            <Label id="_IDGenLabel2" text="ID:"/>
+            <Input id="_IDGenInput1" value="{kisi>/KisiId}"/>            
+            <Label id="_IDGenLabel3" text="Ad:" />
+            <Input id="_IDGenInput2" value="{kisi>/KisiAd}"/>
+            <Label id="_IDGenLabel4" text="Soyad:"/>
+            <Input id="_IDGenInput3" value="{kisi>/KisiSoyadi}"/>
+            <Label id="_IDGenLabel5" text="Yas:" />
+            <Input id="_IDGenInput4" value="{kisi>/Yas}"
+            />
+        </VBox>
+        <beginButton>
+            <Button id="idEkleButton" text="EKLE" press="onEkle" type="Accept"/>
+        </beginButton>
+    </Dialog>
+
+</core:FragmentDefinition>
